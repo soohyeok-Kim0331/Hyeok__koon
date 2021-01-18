@@ -1,0 +1,12 @@
+{% extends "base.html"  %} #tamplate inheritance. parents tamplate
+
+{% block content %}
+
+    <h3>{{ template_name }} 님의 성적</h3>
+    <ul>
+        {% for key, value in template_score.items() %}
+            <li>{{ key }} : {{ value }}</li>
+        {% endfor%}
+    </ul>
+
+{% endblock %}
